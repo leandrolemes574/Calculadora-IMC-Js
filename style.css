@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Palanquin', sans-serif;
+}
+
+.box-container {
+    width: 100vw;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    border: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+
+label {
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.input {
+    display: grid;
+    width: 80%;
+}
+
+
+#nome {
+    height: 30px;
+    font-size: 20px;
+    padding: 5px;
+    transition: 0.5s;
+    outline: none;
+}
+
+#nome:hover {
+    border-radius: 5px;
+}
+
+#altura {
+    height: 30px;
+    font-size: 20px;
+    padding: 5px;
+    transition: 0.5s;
+    outline: none;
+}
+
+#altura:hover {
+    border-radius: 5px;
+}
+
+#peso {
+    height: 30px;
+    font-size: 20px;
+    padding: 5px;
+    transition: 0.5s;
+    outline: none;
+}
+
+#peso:hover {
+    border-radius: 5px;
+}
+
+.button-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#button {
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: blueviolet;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    transition: .8s;
+    flex: 1
+}
+
+#button:hover {
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    transition: .8s;
+}
+
+#limpar {
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #7A506F;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    transition: .8s;
+    flex: 1
+}
+
+#limpar:hover {
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: 1px solid #7A506F;
+    color: #7A506F;
+    transition: .8s;
+}
+
+#resultado {
+    color: aliceblue;
+    margin-top: 15px;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 920px) {
+    .container {
+        width: 70%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 780px) {
+    .container {
+        width: 90%;
+        height: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    label {
+        font-size: 1.4rem;
+    }
+    
+    
+    #nome {
+        font-size: 16px;
+    }
+    
+    #altura {
+        font-size: 16px;
+    }
+    
+    #peso {
+        font-size: 16px;
+    }
+    
+    .button-container {
+        gap: 1.3rem;
+    }
+
+    #resultado {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    
+h1 {
+    font-size: 1.8rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+
+#nome {
+    font-size: 16px;
+}
+
+#altura {
+    font-size: 16px;
+}
+
+#peso {
+    font-size: 16px;
+}
+
+.button-container {
+    gap: 1rem;
+}
+
+#resultado {
+    font-size: 1.2rem;
+}
+}
+
